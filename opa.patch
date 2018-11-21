@@ -1,0 +1,40 @@
+Index: app/src/main/java/com/example/uende/ecomerce_na_unha/ShoppingCartEntry.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/uende/ecomerce_na_unha/ShoppingCartEntry.java	(date 1542836112324)
++++ app/src/main/java/com/example/uende/ecomerce_na_unha/ShoppingCartEntry.java	(date 1542836112324)
+@@ -0,0 +1,32 @@
++package com.example.uende.ecomerce_na_unha;
++
++//verifica a entrada do pedido  que será levada para o carrinho de compras
++
++public class ShoppingCartEntry {
++
++//conexao com a classe produto
++
++        private Produto mProduto;
++        private int mQuantidade;
++
++    public ShoppingCartEntry(Produto mProduto, int mQuantidade) {
++        this.mProduto = mProduto;
++        this.mQuantidade = mQuantidade;
++    }
++
++    public Produto getmProduto() {
++        return mProduto;
++    }
++
++    public void setmProduto(Produto mProduto) {
++        this.mProduto = mProduto;
++    }
++
++    public int getmQuantidade() {
++        return mQuantidade;
++    }
++
++    public void setmQuantidade(int mQuantidade) {
++        this.mQuantidade = mQuantidade;
++    }
++}
